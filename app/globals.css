@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background-color: #f6f9ff;
+    color: #061b4d;
+  }
+
+  ::selection {
+    background-color: #dbe7ff;
+    color: #0038a8;
+  }
+}
+
+.font-display {
+  font-family: "Zen Maru Gothic", "Noto Sans JP", "Hiragino Maru Gothic ProN", sans-serif;
+}
+
+.font-num {
+  font-family: var(--font-num), var(--font-display), sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentle-float 5.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-gentle-float {
+    animation: none;
+  }
+}

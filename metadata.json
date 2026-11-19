@@ -1,0 +1,6 @@
+{
+  "name": "シイナ デビュー予告サイト",
+  "description": "2026年12月31日デビュー予定のVTuber「シイナ」公式カウントダウン＆ティザーサイト",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
